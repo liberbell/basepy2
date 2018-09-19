@@ -3,6 +3,7 @@ def func1():
 
 def func2(arg1, arg2):
     print(arg1, ' ', arg2)
+    return arg1, arg2
 
 def cube(x):
     return x*x*x
