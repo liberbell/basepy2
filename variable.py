@@ -1,7 +1,14 @@
 f = 0
-print(f)
+# print(f)
+#
+# f = 'abc'
+# print(f)
+#
+# print('This is the string ' + str(123))
 
-f = 'abc'
-print(f)
+def someFunction():
+    f = 'def'
+    print(f)
 
-print('This is the string ' + str(123))
+someFunction()
+print(f)
