@@ -22,4 +22,5 @@ func2(10, 20)
 print(func2(10, 20))
 print(cube(3))
 
-power(10)
+print(power(2))
+print(power(2, 12))
