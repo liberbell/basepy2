@@ -1,6 +1,6 @@
 
 def main():
-    x, y = 100, 10
+    x, y = 10, 100
     print('x: ', x, 'y: ', y)
 
     # if (x < y):
