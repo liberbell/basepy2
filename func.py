@@ -24,3 +24,4 @@ def power(num, x=1):
 
 print(power(2))
 print(power(2, 12))
+print(power(x=3, num=2))
