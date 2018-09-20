@@ -5,8 +5,12 @@ def main():
 
     if (x < y):
         st = 'x is less than y'
-    else :
+    elif(x > y):
         st = 'x is greater than y'
+    elif(x == y):
+        st = 'x is same with y'
+    else:
+        st = 'It is damm status'
 
     print(st)
 
