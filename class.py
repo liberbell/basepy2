@@ -1,11 +1,11 @@
-class myClass:
+class myClass():
     def method1(self):
         print('myClass method1')
 
     def method2(self, someStrings):
         print('myClass method2 ' + someStrings)
 
-class anotherClass:
+class anotherClass(myClass):
     def method1(self):
         print('anotherClass method1')
 
