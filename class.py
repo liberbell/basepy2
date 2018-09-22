@@ -2,7 +2,7 @@ class myClass:
     def method1(self):
         print('myClass method1')
 
-    def method2(self):
+    def method2(self, someStrings):
         print('myClass method2 ' + someStrings)
 
 def main():
