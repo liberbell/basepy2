@@ -3,7 +3,7 @@ class myClass:
         print('myClass method1')
 
     def method2(self):
-        print('myClass method2')
+        print('myClass method2 ' + someStrings)
 
 def main():
 
