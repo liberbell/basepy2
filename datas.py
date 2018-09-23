@@ -6,6 +6,8 @@ def main():
     today = date.today()
     print('Today`s date is ', today)
 
+    print('Date compornets: ', today.day, today.month, today.year)
+
 
 if __name__ == '__main__':
     main()
