@@ -8,6 +8,8 @@ def main():
 
     print('Date compornets: ', today.day, today.month, today.year)
 
+    print('Todays weekday # is ', today.weekday())
+
 
 if __name__ == '__main__':
     main()
