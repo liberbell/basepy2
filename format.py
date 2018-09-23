@@ -9,6 +9,9 @@ def main():
     print(now.strftime('Local date: %x'))
     print(now.strftime('Local time: %X'))
 
+    print(now.strftime('Current time: %I:%M:%S %p'))
+    print(now.strftime('24-hour time: %H:%M %p'))
+
 
 if __name__ == '__main__':
     main()
