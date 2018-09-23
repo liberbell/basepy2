@@ -10,7 +10,7 @@ def main():
     print(now.strftime('Local time: %X'))
 
     print(now.strftime('Current time: %I:%M:%S %p'))
-    print(now.strftime('24-hour time: %H:%M %p'))
+    print(now.strftime('24-hour time: %H:%M'))
 
 
 if __name__ == '__main__':
