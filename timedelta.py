@@ -17,6 +17,13 @@ t = datetime.now() - timedelta(weeks=1)
 s = t.strftime('%A %B %d, %Y')
 print('One week ago it was: ' + s)
 
+today = date.today()
+afd = date(today.year, 4, 1)
+
+if afd < today:
+    print('April Fool`s day already went by % days ago' % ((today-afd).days))
+    afd = afd.replace(year = today.year+1)
+
 # def main():
 #
 #
