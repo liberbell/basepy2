@@ -1,5 +1,5 @@
 import calendar
 
-c = calendar.TextCalendar(calendar.MONDAY)
-st = c.formatmonth(2018, 9, 0, 0)
+hc = calendar.HTMLCalendar(calendar.SUNDAY)
+st = hc.formatmonth(2018, 9)
 print(st)
