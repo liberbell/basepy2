@@ -18,5 +18,8 @@ def main():
     print(t)
     print(datetime.datetime.fromtimestamp(path.getmtime('textfile.txt')))
 
+    td = datetime.datetime.now.() - datetime.datetime.fromtimestamp(path.gettime('textfile.txt'))
+    print(td)
+
 if __name__ == '__main__':
     main()
