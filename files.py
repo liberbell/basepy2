@@ -7,8 +7,11 @@ def main():
 
     # f.close()
     if f.mode == 'r':
-        contents = f.read()
-        print(contents)
+        # contents = f.read()
+        fl  = f.readlines()
+        for x in fl:
+            print(x)
+        # print(contents)
 
 if __name__ == '__main__':
     main()
