@@ -5,6 +5,7 @@ from datetime import date, time, timedelta
 import time
 
 def main():
+    print(os.name)
 
 if __name__ == '__main__':
     main()
