@@ -1,5 +1,5 @@
 def main():
-    f = open('textfile.txt', 'w+')
+    # f = open('textfile.txt', 'w+')
     f = open('textfile.txt', 'a')
 
     for i in range(10):
