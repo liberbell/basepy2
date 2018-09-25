@@ -19,7 +19,7 @@ def main():
     print(datetime.datetime.fromtimestamp(path.getmtime('textfile.txt')))
 
     td = datetime.datetime.now() - datetime.datetime.fromtimestamp(path.getmtime('textfile.txt'))
-    print(td)
+    print('It has been ' + str(td) + ' since the file was modified')
 
 if __name__ == '__main__':
     main()
