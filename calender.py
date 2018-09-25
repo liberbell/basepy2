@@ -13,7 +13,7 @@ c = calendar.TextCalendar(calendar.SATURDAY)
 #     print(day)
 
 print('Teem meeting will be on:')
-for m in range(1, 31):
+for m in range(1, 13):
     cal = calendar.monthcalendar(2018, m)
     weekone = cal[0]
     weektwo = cal[1]
