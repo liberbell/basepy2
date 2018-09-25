@@ -7,7 +7,7 @@ import time
 def main():
     print(os.name)
 
-    print('Item exists: ' + str(path.exists))
+    print('Item exists: ' + str(path.exists('textfile.txt')))
 
 if __name__ == '__main__':
     main()
