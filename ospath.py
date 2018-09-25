@@ -8,7 +8,8 @@ def main():
     print(os.name)
 
     print('Item exists: ' + str(path.exists('textfile.txt')))
-    print('Item is a file: ' +str(path.isfile('textfile.txt')))
+    print('Item is a file: ' + str(path.isfile('textfile.txt')))
+    print('Item is a directory: ' + str(path.isdir('textfile.txt')))
 
 if __name__ == '__main__':
     main()
