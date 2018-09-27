@@ -8,6 +8,7 @@ def main():
 
     weburl = urllib.request.urlopen(urlDATA)
     print('Result code: ' + str(weburl.getcode()))
+    print()
 
 if __name__ == '__main__':
     main()
