@@ -9,7 +9,11 @@ def main():
 
     weburl = urllib.request.urlopen(urlDATA)
     print('Result code: ' + str(weburl.getcode()))
-    print()
+    if (weburl.getcode() == 200):
+        data = weburl.read()
+        printResult(data)
+    else:
+        print('Received error, can`t parse results')
 
 if __name__ == '__main__':
     main()
