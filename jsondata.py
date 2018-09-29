@@ -13,6 +13,7 @@ def printResult(data):
     for i in theJSON['features']:
         print(i['properties']['place'])
         print(i['properties']['mag'])
+    print('----------\n')
 
 
 def main():
