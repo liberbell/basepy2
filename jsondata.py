@@ -12,7 +12,6 @@ def printResult(data):
 
     for i in theJSON['features']:
         print(i['properties']['place'], i['properties']['mag'])
-        print(i['properties']['mag'])
     print('----------\n')
 
     for i in theJSON['features']:
