@@ -26,6 +26,15 @@ def printResult(data):
             if feltReport > 0:
                 print('%2.1f' % i['properties']['mag'], i['properties']['place'],
                 ' Reported ' + str(feltReport) +' peoples')
+    print('-----------\n')
+    
+    for i in theJSON['features']:
+        feltReport = i['properties']['felt']
+        location = i['coordinates']['longitude']
+        if feltReport != None:
+            if feltReport > 5:
+                print('%2.1f' % i['properties']['mag'], i['properties']['place'],
+                ' Reported ' + str(feltReport) +' peoples', i['coordinates']['longitude'])
 
 def main():
     urlDATA = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson'
