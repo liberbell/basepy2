@@ -19,6 +19,15 @@ def printResult(data):
             print('%2.1f' % i['properties']['mag'], i['properties']['place'])
     print('----------\n')
 
+    print('Events that were felt:')
+    for i in theJSON['features']:
+        feltReport = i['properties']['felt']
+        if feltReport != None:
+            if feltReport > 0:
+                print('%2.1f' % i['properties']['mag'], i['properties']['place'],
+                ' Reported ' + str(feltReport) +'peoples')
+
+
 
 def main():
     urlDATA = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson'
