@@ -17,7 +17,8 @@ def printResult(data):
 
     for i in theJSON['features']:
         if i['properties']['mag'] >= 4.0:
-            print('%2.1f' % i['properties']['mag'])
+            print('%2.1f' % i['properties']['mag'], i['properties']['place'])
+    print('----------\n')
 
 
 def main():
