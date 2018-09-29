@@ -27,10 +27,10 @@ def printResult(data):
                 print('%2.1f' % i['properties']['mag'], i['properties']['place'],
                 ' Reported ' + str(feltReport) +' peoples')
     print('-----------\n')
-    
+
     for i in theJSON['features']:
         feltReport = i['properties']['felt']
-        location = i['coordinates']['longitude']
+        location = i['geometry']['coordinates']
         if feltReport != None:
             if feltReport > 5:
                 print('%2.1f' % i['properties']['mag'], i['properties']['place'],
