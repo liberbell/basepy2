@@ -1,5 +1,6 @@
 from html.parser import HTMLParser
 
+metacount = 0
 class MyHTMLParser(HTMLParser):
     def handle_comment(self, data):
         print('Encountered comment: ', data)
