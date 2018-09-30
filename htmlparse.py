@@ -16,6 +16,9 @@ class MyHTMLParser(HTMLParser):
         pos = self.getpos()
         print('\tAt line: ', pos[0], ' position ', pos[1])
 
+        if attr.__len() > 0:
+            print('\tAttributes:')
+
     def handle_endtag(self, tag):
         print('Encountered tag: ', tag)
         pos = self.getpos()
