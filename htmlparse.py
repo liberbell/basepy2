@@ -6,6 +6,21 @@ class MyHTMLParser(HTMLParser):
         pos = self.getpos()
         print('\tAt line: ', pos[0], ' position ', pos[1])
 
+    def handle_starttag(self, tag, attr):
+
+    def handle_endtag(self, tag):
+        print('Encountered comment: ', data)
+        pos = self.getpos()
+        print('\tAt line: ', pos[0], ' position ', pos[1])
+
+    def handle_data(self, data):
+        if (data.isspace())
+            return
+        print('Encountered data: ', data)
+        pos = self.getpos()
+        print('\tAt line: ', pos[0], ' position ', pos[1])
+
+
 
 def main():
     parser = MyHTMLParser()
