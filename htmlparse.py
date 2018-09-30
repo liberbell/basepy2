@@ -16,7 +16,7 @@ class MyHTMLParser(HTMLParser):
         pos = self.getpos()
         print('\tAt line: ', pos[0], ' position ', pos[1])
 
-        if attr.__len() > 0:
+        if attr.__len__() > 0:
             print('\tAttributes:')
             for a in attrs:
                 print('\t', a[0], '=', 'a[1]')
