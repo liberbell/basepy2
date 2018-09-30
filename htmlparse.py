@@ -18,6 +18,8 @@ class MyHTMLParser(HTMLParser):
 
         if attr.__len() > 0:
             print('\tAttributes:')
+            for a in attrs:
+                print('\t', a[0], '=', 'a[1]')
 
     def handle_endtag(self, tag):
         print('Encountered tag: ', tag)
