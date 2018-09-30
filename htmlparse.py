@@ -8,7 +8,7 @@ class MyHTMLParser(HTMLParser):
         pos = self.getpos()
         print('\tAt line: ', pos[0], ' position ', pos[1])
 
-    def handle_starttag(self, tag, attr):
+    def handle_starttag(self, tag, attrs):
         global metacount
         if tag == 'meta':
             metacount += 1
