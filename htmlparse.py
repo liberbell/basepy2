@@ -1,6 +1,6 @@
 from html.parser import HTMLParser
 
-class MyHTMLParser(HTMLParser)
+class MyHTMLParser(HTMLParser):
     def handle_comment(self, data):
         print('Encountered comment: ', data)
         pos = self.getpos()
