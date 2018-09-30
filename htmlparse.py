@@ -1,6 +1,7 @@
 from html.parser import HTMLParser
 
 metacount = 0
+
 class MyHTMLParser(HTMLParser):
     def handle_comment(self, data):
         print('Encountered comment: ', data)
@@ -8,6 +9,9 @@ class MyHTMLParser(HTMLParser):
         print('\tAt line: ', pos[0], ' position ', pos[1])
 
     def handle_starttag(self, tag, attr):
+        global metacount
+        if tag == 'meta':
+            metacount += 1
         print('Encountered tag: ', tag)
         pos = self.getpos()
         print('\tAt line: ', pos[0], ' position ', pos[1])
@@ -18,7 +22,7 @@ class MyHTMLParser(HTMLParser):
         print('\tAt line: ', pos[0], ' position ', pos[1])
 
     def handle_data(self, data):
-        if (data.isspace())
+        if (data.isspace()):
             return
         print('Encountered data: ', data)
         pos = self.getpos()
