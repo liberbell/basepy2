@@ -9,5 +9,8 @@ def main():
     skills = doc.getElementsByTagName('skill')
     print('%d skills: ' % skills.length)
 
+    for skill in skills:
+        print(skill.getAttribute('name'))
+
 if __name__ == '__main__':
     main()
