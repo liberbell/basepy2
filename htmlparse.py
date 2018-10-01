@@ -42,6 +42,8 @@ def main():
         contents = f.read()
         parser.feed(contents)
 
+    print('Meta tags found: ' + str(metacount))
+
 
 if __name__ == '__main__':
     main()
